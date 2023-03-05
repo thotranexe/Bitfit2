@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/food"
+        android:enabled="true"
+        android:icon="@drawable/baseline_checklist_24"
+        android:title="Record"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/dash"
+        android:enabled="true"
+        android:icon="@drawable/baseline_auto_graph_24"
+        android:title="Dashboard"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/addentry"
+        android:enabled="true"
+        android:icon="@drawable/baseline_auto_graph_24"
+        android:title="New Entry"
+        app:showAsAction="ifRoom" />
+
+</menu>

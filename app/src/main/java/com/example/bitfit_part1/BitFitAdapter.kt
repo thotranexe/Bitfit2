@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class BitFitAdapter(private val context: Context, private val items: MutableList<BitFitItem>) : RecyclerView.Adapter<BitFitAdapter.ViewHolder>() {
+class BitFitAdapter(private val items: MutableList<BitFitItem>) : RecyclerView.Adapter<BitFitAdapter.ViewHolder>() {
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val foodNameTv : TextView
         private val caloriesTv : TextView
@@ -24,6 +24,7 @@ class BitFitAdapter(private val context: Context, private val items: MutableList
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        val context=parent.context
         val view = LayoutInflater.from(context).inflate(R.layout.bitfit_item, parent, false)
         return ViewHolder(view)
     }

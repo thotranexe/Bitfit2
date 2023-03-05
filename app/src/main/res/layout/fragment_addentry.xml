@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/detailLayout"
-    tools:context=".DetailActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AddEntryFragment">
 
     <EditText
         android:id="@+id/foodName"
         android:layout_width="240dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
         android:hint="Enter Food"
+        android:layout_marginTop="20dp"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,8 +23,10 @@
         android:id="@+id/foodCalories"
         android:layout_width="240dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="100dp"
         android:hint="Enter Calories"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
         android:inputType="number"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,11 +37,12 @@
         android:id="@+id/recordFood"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="400dp"
         android:text="Record This Food"
+        android:layout_marginTop="200dp"
+        android:layout_gravity="center_horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/foodCalories" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
