@@ -16,7 +16,7 @@
     <item
         android:id="@+id/addentry"
         android:enabled="true"
-        android:icon="@drawable/baseline_auto_graph_24"
+        android:icon="@drawable/baseline_fiber_new_24"
         android:title="New Entry"
         app:showAsAction="ifRoom" />
 
